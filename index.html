@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar Obat-Obatan</title>
+  <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+  <div class="container">
+    <h1> Daftar Obat-Obatan</h1>
+
+    <form id="form-obat">
+      <label for="nama-obat">Nama Obat :</label>
+      <input type="text" id="nama-obat" required>
+
+      <label for="jenis-obat">Jenis Obat :</label>
+      <input type="text" id="jenis-obat" required>
+
+      <label for="kadaluarsa-obat">Tanggal Kadaluarsa :</label>
+      <input type="date" id="kadaluarsa-obat" required>
+
+      <label for="gambar-obat">Gambar Obat (URL) :</label>
+      <input type="url" id="gambar-obat" placeholder="https://...">
+
+      <button type="submit"> Tambahkan Obat</button>
+    </form>
+
+    <h2 id="judul-daftar">Daftar Obat Kosong </h2>
+    <ul id="daftar-obat"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
